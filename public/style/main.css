@@ -12,10 +12,6 @@ html, body {
   align-items: center;
 };
 
-/* body {
- 
-} */
-
 h1 {
   display: inline-block;
 }
@@ -27,7 +23,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background:rgb(214, 242, 131);
-
+  width: 30px;
 }
 
 .guitar {
@@ -35,6 +31,7 @@ h1 {
   flex-direction: column;
   width: 90vw;
   min-height: 30vh;
+  /* min-width: 800px; */
 }
 
 .string {
@@ -50,7 +47,11 @@ h1 {
   background: inherit;
 }
 
-.fretCount .fret {
+.fretCount .fretCounter {
   background: inherit;
   border: none;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
