@@ -9,7 +9,8 @@
   "author": "Jason Byer",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "tonal": "^2.2.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

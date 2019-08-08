@@ -24,16 +24,33 @@ h1 {
   border: 1px solid black;
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
+  background:rgb(214, 242, 131);
+
 }
 
 .guitar {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  height: 20vh;
+  min-height: 30vh;
 }
 
 .string {
   display: flex;
-  height: 16%;
+  height: 20%;
+}
+
+.fret:first-of-type {
+  border-right: 2px solid red;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  background: inherit;
+}
+
+.fretCount .fret {
+  background: inherit;
+  border: none;
 }
