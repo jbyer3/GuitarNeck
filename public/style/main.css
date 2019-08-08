@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: lime;
+  background: #e5e4d4;
   font-size: 24px;
   line-height: 1.4;
   width: 100vw;
@@ -44,7 +44,7 @@ h1 {
   border-top: none;
   border-left: none;
   border-bottom: none;
-  background: inherit;
+  /* background: inherit; */
 }
 
 .fretCount .fretCounter {
@@ -54,4 +54,8 @@ h1 {
   flex: 1;
   align-items: center;
   justify-content: center;
+}
+
+.selected {
+  background: red;
 }

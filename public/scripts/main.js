@@ -8,6 +8,16 @@ fretArray.forEach(fret => {
 })
 
 function logger() {
-  console.log(this.textContent)
+  
+  fretArray.forEach(fret => {
+    if(fret.dataset.notevalue === this.dataset.notevalue){
+      console.log(fret)
+      if(!fret.classList.contains('selected')){
+        fret.classList.add('selected')
+      } else {
+        fret.classList.remove('selected')
+      }
+    }
+  })
 }
 
