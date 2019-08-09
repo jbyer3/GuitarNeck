@@ -2,8 +2,6 @@ const frets = document.querySelectorAll('.fret');
 const fretArray = Array.from(frets);
 const selectedNotes = new Set;
 
-const liveNoteArray = document.getElementsByClassName('selected');
-
 fretArray.forEach(fret => {
   fret.addEventListener('click', highlight);
 });
@@ -21,4 +19,3 @@ function highlight() {
     }
   });
 }
-
