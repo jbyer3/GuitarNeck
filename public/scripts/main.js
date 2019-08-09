@@ -1,20 +1,22 @@
 const frets = document.querySelectorAll('.fret');
 const fretArray = Array.from(frets);
+const selectedNotes = new Set;
 
 const liveNoteArray = document.getElementsByClassName('selected');
 
 fretArray.forEach(fret => {
-  fret.addEventListener('click', logger);
+  fret.addEventListener('click', highlight);
 });
 
-function logger() {
+function highlight() {
   fretArray.forEach(fret => {
     if(fret.dataset.notevalue === this.dataset.notevalue){
-      // console.log(fret);
       if(!fret.classList.contains('selected')){
         fret.classList.add('selected');
+        selectedNotes.add(this.dataset.notevalue);
       } else {
         fret.classList.remove('selected');
+        selectedNotes.delete(this.dataset.notevalue);
       }
     }
   });
